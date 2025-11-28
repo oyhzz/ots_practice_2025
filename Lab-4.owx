@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ирина/ontologies/2025/10/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ирина/ontologies/2025/10/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/ирина/ontologies/2025/10/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#действия"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#действия_с_кнопкой"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#действия_с_экраном"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#интерфейс"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#кнопка"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#пользователь"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#причина"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#шаги"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#экран"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_причиной"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#быть_целевым_действием_для2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_состояние"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#материализоваться_в"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#предшествовать_действия"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#является_частью"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#включить_фильм"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#войти"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#выбрать_жанр_фильма"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#выбрать_фильм"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#зарегистрироваться"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#изображение"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#изображение2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#кликнуть"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#кликнуть2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#кнопка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#открыть_приложение"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#печатать"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#экран"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#экран2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#действия"/>
+        <Class IRI="#причина"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#действия_с_кнопкой"/>
+        <Class IRI="#действия"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#действия_с_экраном"/>
+        <Class IRI="#действия"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#интерфейс"/>
+        <Class IRI="#причина"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#кнопка"/>
+        <Class IRI="#интерфейс"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#причина"/>
+        <Class IRI="#пользователь"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#шаги"/>
+        <Class IRI="#причина"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#экран"/>
+        <Class IRI="#интерфейс"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#шаги"/>
+        <NamedIndividual IRI="#включить_фильм"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#шаги"/>
+        <NamedIndividual IRI="#войти"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#шаги"/>
+        <NamedIndividual IRI="#выбрать_жанр_фильма"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#шаги"/>
+        <NamedIndividual IRI="#выбрать_фильм"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#шаги"/>
+        <NamedIndividual IRI="#зарегистрироваться"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#действия"/>
+        <NamedIndividual IRI="#изображение"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#действия"/>
+        <NamedIndividual IRI="#изображение2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#действия"/>
+        <NamedIndividual IRI="#кликнуть"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#действия"/>
+        <NamedIndividual IRI="#кликнуть2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#кнопка"/>
+        <NamedIndividual IRI="#кнопка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#шаги"/>
+        <NamedIndividual IRI="#открыть_приложение"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#действия"/>
+        <NamedIndividual IRI="#печатать"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#экран"/>
+        <NamedIndividual IRI="#экран"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#экран"/>
+        <NamedIndividual IRI="#экран2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <NamedIndividual IRI="#включить_фильм"/>
+        <NamedIndividual IRI="#изображение2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <NamedIndividual IRI="#войти"/>
+        <NamedIndividual IRI="#кликнуть2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+        <NamedIndividual IRI="#войти"/>
+        <NamedIndividual IRI="#выбрать_жанр_фильма"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <NamedIndividual IRI="#выбрать_жанр_фильма"/>
+        <NamedIndividual IRI="#кликнуть2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+        <NamedIndividual IRI="#выбрать_жанр_фильма"/>
+        <NamedIndividual IRI="#выбрать_фильм"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <NamedIndividual IRI="#выбрать_фильм"/>
+        <NamedIndividual IRI="#кликнуть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+        <NamedIndividual IRI="#выбрать_фильм"/>
+        <NamedIndividual IRI="#включить_фильм"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <NamedIndividual IRI="#зарегистрироваться"/>
+        <NamedIndividual IRI="#кликнуть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+        <NamedIndividual IRI="#зарегистрироваться"/>
+        <NamedIndividual IRI="#войти"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+        <NamedIndividual IRI="#изображение"/>
+        <NamedIndividual IRI="#экран"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+        <NamedIndividual IRI="#изображение2"/>
+        <NamedIndividual IRI="#экран2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+        <NamedIndividual IRI="#кликнуть"/>
+        <NamedIndividual IRI="#кнопка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+        <NamedIndividual IRI="#кликнуть2"/>
+        <NamedIndividual IRI="#экран2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <NamedIndividual IRI="#открыть_приложение"/>
+        <NamedIndividual IRI="#изображение"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+        <NamedIndividual IRI="#открыть_приложение"/>
+        <NamedIndividual IRI="#зарегистрироваться"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+        <NamedIndividual IRI="#печатать"/>
+        <NamedIndividual IRI="#экран"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#быть_причиной"/>
+        <Class IRI="#причина"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <Class IRI="#шаги"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+        <Class IRI="#действия"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+        <Class IRI="#шаги"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#предшествовать_действия"/>
+        <Class IRI="#действия"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#быть_причиной"/>
+        <Class IRI="#шаги"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#материализоваться_в"/>
+        <Class IRI="#действия"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+        <Class IRI="#интерфейс"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#предшедствовать_шаги"/>
+        <Class IRI="#шаги"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#предшествовать_действия"/>
+        <Class IRI="#действия"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#действия"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#кнопка"/>
+                <Variable IRI="/i"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/i"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#действия_с_кнопкой"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#действия"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#экран"/>
+                <Variable IRI="/i"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/i"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#действия_с_экраном"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#пользователь"/>
+                <Variable IRI="/п"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_состояние"/>
+                <Variable IRI="/п"/>
+                <Variable IRI="/пр"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#быть_целевым_действием_для2"/>
+                <Variable IRI="/ш"/>
+                <Variable IRI="/пр"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#материализоваться_в"/>
+                <Variable IRI="/ш"/>
+                <Variable IRI="/д"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#быть_причиной"/>
+                <Variable IRI="/пр"/>
+                <Variable IRI="/д"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#предшедствовать_шаги"/>
+                <Variable IRI="/ш1"/>
+                <Variable IRI="/ш2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#материализоваться_в"/>
+                <Variable IRI="/ш1"/>
+                <Variable IRI="/д1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#материализоваться_в"/>
+                <Variable IRI="/ш2"/>
+                <Variable IRI="/д2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#предшествовать_действия"/>
+                <Variable IRI="/д1"/>
+                <Variable IRI="/д2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+                <Variable IRI="/д1"/>
+                <Variable IRI="/и1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#предшествовать_действия"/>
+                <Variable IRI="/д1"/>
+                <Variable IRI="/д2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#предполагать_взаимодействие_с"/>
+                <Variable IRI="/д2"/>
+                <Variable IRI="/и2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#быть_целевым_действием_для2"/>
+                <Variable IRI="/и1"/>
+                <Variable IRI="/и2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
